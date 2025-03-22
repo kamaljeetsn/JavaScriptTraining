@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Practice</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin-bottom: 20px; }
+        input, button { margin-top: 5px; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript String Practice Questions</h2>
+
+    <!-- Question 1: Find String Length -->
+    <div class="question">
+        <h3>1️⃣ Find String Length</h3>
+        <p>Enter a string to find its length:</p>
+        <input type="text" id="str1">
+        <br>
+        <button onclick="
+            let str1 = document.getElementById('str1').value;
+            document.getElementById('result1').textContent = 'Length: ' + str1.length;
+        ">Find Length</button>
+        <p><b>Result:</b> <span id="result1"></span></p>
+    </div>
+
+    <!-- Question 2: Concatenate Two Strings -->
+    <div class="question">
+        <h3>2️⃣ Concatenate Two Strings</h3>
+        <p>Enter two strings to concatenate them:</p>
+        <input type="text" id="strA">
+        <input type="text" id="strB">
+        <br>
+        <button onclick="
+            let strA = document.getElementById('strA').value;
+            let strB = document.getElementById('strB').value;
+            document.getElementById('result2').textContent = 'Concatenated: ' + strA + ' ' + strB;
+        ">Concatenate</button>
+        <p><b>Result:</b> <span id="result2"></span></p>
+    </div>
+
+   <!-- Question 3: Extract First and Last Character -->
+    <div class="question">
+        <h3>4️⃣ Extract First and Last Character</h3>
+        <p>Enter a string to get the first and last character:</p>
+        <input type="text" id="str3">
+        <br>
+        <button onclick="
+            let str3 = document.getElementById('str3').value;
+            let firstChar = str3.charAt(0);
+            let lastChar = str3.charAt(str3.length - 1);
+            document.getElementById('result4').textContent = 'First: ' + firstChar + ', Last: ' + lastChar;
+        ">Extract</button>
+        <p><b>Result:</b> <span id="result4"></span></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Objects</title>
+</head>
+<body>
+    <p id="demo"></p>
+    
+</body>
+<script>
+    // Create nested Objects
+    const myObj = {
+      name: "John",
+      age: 30,
+      myCars: {
+        car1: "Ford",
+        car2: "BMW",
+        car3: "Fiat"
+      }
+    }
+    //Method 1
+    document.getElementById("demo").innerHTML = myObj.myCars.car2;
+    //Method 2
+    document.getElementById("demo").innerHTML = myObj.myCars["car2"];
+    //Method 3
+    document.getElementById("demo").innerHTML = myObj["myCars"]["car2"];
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var color = "red";
+        switch(color){
+            case "red":
+                document.getElementById("demo").innerHTML = "The color is red";
+                break;
+            case "yellow":
+                document.getElementById("demo").innerHTML = "The color is yellow";
+                break;
+            case "green":
+                document.getElementById("demo").innerHTML = "The color is green";
+                break;
+            default:
+                document.getElementById("demo").innerHTML = "Wrong color is selected";
+        }
+    </script>
+</body>
+</html>

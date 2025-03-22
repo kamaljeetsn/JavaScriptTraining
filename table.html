@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach vs map Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Comparison: forEach() vs map()</h2>
+
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>forEach()</th>
+            <th>map()</th>
+        </tr>
+        <tr>
+            <td><b>Purpose</b></td>
+            <td>Used to iterate over an array and perform an action on each element.</td>
+            <td>Used to transform each element and return a new array.</td>
+        </tr>
+        <tr>
+            <td><b>Return Value</b></td>
+            <td>undefined (does not return a new array).</td>
+            <td>Returns a new array with transformed values.</td>
+        </tr>
+        <tr>
+            <td><b>Modifies Original Array?</b></td>
+            <td>No (but can modify objects inside the array).</td>
+            <td>No (creates a new array without modifying the original).</td>
+        </tr>
+        <tr>
+            <td><b>Performance</b></td>
+            <td>Slightly faster because it doesn’t create a new array.</td>
+            <td>Creates a new array, so it has additional memory usage.</td>
+        </tr>
+        <tr>
+            <td><b>Use Case</b></td>
+            <td>When you just want to execute a function on each element (e.g., logging, updating DOM).</td>
+            <td>When you need a modified version of the original array.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

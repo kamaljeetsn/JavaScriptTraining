@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach Example</title>
+</head>
+<body>
+
+    <div id="demo"></div> <!-- Result will be displayed here -->
+
+    <script>
+        const numbers = [1, 2, 3, 4, 5];
+
+        let result = "";
+
+        numbers.forEach((num) => {
+            result += (num * 2) + " "; // Concatenating numbers with space
+        });
+
+        document.getElementById("demo").innerHTML = result; // Updating HTML
+    </script>
+
+</body>
+</html>

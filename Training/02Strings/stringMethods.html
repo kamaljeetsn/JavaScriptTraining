@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    
+    <script>
+        
+        //Find the length of the String
+        var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo1").innerHTML = text.length
+        //Extracting String characters
+        //method 1
+        text = "HELLO WORLD";
+        document.getElementById("demo2").innerHTML = text.charAt(0)
+        //method 2
+        document.getElementById("demo3").innerHTML = text.at(2)
+        //method 3
+        document.getElementById("demo4").innerHTML = text[2]
+        //Extracting String Parts
+        //method 1
+        text = "Apple, Banana, Kiwi";
+        //slice between 7 and 13
+        document.getElementById("demo5").innerHTML = text.slice(7,13)
+        //slice from 7 till end
+        document.getElementById("demo6").innerHTML = text.slice(7)
+        //method 2 - Substring
+        document.getElementById("demo7").innerHTML = text.substring(7,13)
+        //Case Conversion
+        text1 = "Hello World!";
+        document.getElementById("demo8").innerHTML = text1.toUpperCase()
+        document.getElementById("demo9").innerHTML = text1.toLowerCase()
+        //using index of method
+        text = "The weather is very good today and is also very soothing";
+        document.getElementById("demo10").innerHTML = text.indexOf("is")
+        //using lastIndexOf
+        document.getElementById("demo11").innerHTML = text.lastIndexOf("is")
+    </script>
+    
+</body>
+</html>

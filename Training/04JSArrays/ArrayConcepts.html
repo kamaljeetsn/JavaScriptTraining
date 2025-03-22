@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        //Create Array
+        const cars = ["Saab", "Volvo", "BMW"];
+        //Access Array Values
+        document.getElementById("demo1").innerHTML = cars[0];
+        //Find no. of elements in array
+        document.getElementById("demo2").innerHTML = cars.length;
+        //Add element to Array
+        cars.push("Marcedes");
+        document.getElementById("demo3").innerHTML = cars.toString();
+        //remove element from array
+        cars.pop();
+        document.getElementById("demo4").innerHTML = cars.toString();
+        //searching an element in an array
+        document.getElementById("demo5").innerHTML = cars.indexOf("BMW");
+        //sorting an array
+        document.getElementById("demo6").innerHTML = cars.sort()
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array join() Example</title>
+</head>
+<body>
+    <h1>The .join() method in JavaScript is used to convert an array into a string by joining its elements with a specified separator.</h1>
+    <h2>Fruits List:</h2>
+    <div id="demo"></div> <!-- The joined array will be displayed here -->
+
+    <script>
+        // Define an array
+        const fruits = ["Apple", "Banana", "Cherry", "Mango"];
+
+        // Convert array to a string using join() with a separator
+        const formattedString = fruits.join(" | ");  // Apple | Banana | Cherry | Mango
+
+        // Display the result in the HTML element
+        document.getElementById("demo").innerHTML = formattedString;
+    </script>
+
+</body>
+</html>

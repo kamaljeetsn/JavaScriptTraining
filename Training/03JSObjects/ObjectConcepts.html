@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Objects</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        //Create Object
+        const person = {firstname:"Jack",age:"12",lastname:"Martin"};
+        //Access properties
+        document.getElementById("demo1").innerHTML = person.firstname;
+        //Add properties
+        person.nationality = "American";
+        document.getElementById("demo2").innerHTML = person.nationality;
+        //Nested Objects
+        const myObj = {
+
+            color:"red",
+            wheels:4,
+            cars:{
+                cars1:"Maruti",
+                cars2:"Hyndai"
+            }
+        }
+        document.getElementById("demo3").innerHTML = myObj.cars.cars1;
+    </script>
+    
+</body>
+</html>

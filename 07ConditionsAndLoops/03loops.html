@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</head>
+<script>
+    var i;
+    var output="";
+    for(i=0;i<=10;i++){
+        output = output + i + "<br>"
+    }
+    document.getElementById("demo").innerHTML = output;
+
+    var j;
+    j=1;
+    var newOutput="";
+    while(j<20){
+        newOutput = newOutput + j + "<br>"
+        j++;
+    }
+    document.getElementById("demo1").innerHTML = newOutput;
+</script>
+<body>
+    
+</body>
+</html>

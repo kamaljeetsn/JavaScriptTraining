@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Concepts</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        //Create Object
+        const person = {
+        firstname:"James",
+        lastname:"Martin",
+        age:50
+        }
+        //Access Properties
+        document.getElementById("demo1").innerHTML = person.firstname
+        //Add properties
+        person.nationality = "American";
+        document.getElementById("demo2").innerHTML = person.nationality
+        //Nested Objects
+        const cars = {
+            color:"red",
+            wheels:4,
+            carName:{
+                car1:"Jaguar",
+                car2:"BMW",
+                car3:"Merc"
+            }
+        }
+        document.getElementById("demo3").innerHTML = cars.carName.car1
+
+    </script>
+    
+    
+</body>
+</html>

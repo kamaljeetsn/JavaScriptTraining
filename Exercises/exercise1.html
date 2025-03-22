@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice (Operators, Control, Strings)</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin-bottom: 20px; }
+        input, button { margin-top: 5px; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Practice Questions</h2>
+
+    <!-- Question 1: JavaScript Operators -->
+    <div class="question">
+        <h3>1️⃣ Add Two Numbers</h3>
+        <p>Enter two numbers to find their sum:</p>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <br>
+        <button onclick="
+            let a = parseFloat(document.getElementById('num1').value);
+            let b = parseFloat(document.getElementById('num2').value);
+            document.getElementById('result1').innerHTML = 'Sum: ' + (a + b);
+        ">Calculate</button>
+        <p><b>Result:</b> <span id="result1"></span></p>
+    </div>
+
+    <!-- Question 2: Control Structure (If-Else) -->
+    <div class="question">
+        <h3>2️⃣ Check Greater Number</h3>
+        <p>Enter two numbers to find the greater one:</p>
+        <input type="number" id="numA">
+        <input type="number" id="numB">
+        <br>
+        <button onclick="
+            let numA = parseFloat(document.getElementById('numA').value);
+            let numB = parseFloat(document.getElementById('numB').value);
+            document.getElementById('result2').innerHTML = 'Greater number: ' + (numA > numB ? numA : numB);
+        ">Check</button>
+        <p><b>Result:</b> <span id="result2"></span></p>
+    </div>
+
+    <!-- Question 3: Control Structure (Loop) -->
+    <div class="question">
+        <h3>3️⃣ Print Even Numbers (1 to N)</h3>
+        <p>Enter a number N to print even numbers up to N:</p>
+        <input type="number" id="numN">
+        <br>
+        <button onclick="
+            let N = parseInt(document.getElementById('numN').value);
+            let evens = '';
+            for (let i = 2; i <= N; i += 2) {
+                evens += i + ' ';
+            }
+            document.getElementById('result3').innerHTML = evens;
+        ">Print</button>
+        <p><b>Result:</b> <span id="result3"></span></p>
+    </div>
+
+    <!-- Question 4: String Operations -->
+    <div class="question">
+        <h3>4️⃣ Convert to Uppercase</h3>
+        <p>Enter a string to convert it to uppercase:</p>
+        <input type="text" id="strInput">
+        <br>
+        <button onclick="
+            let str = document.getElementById('strInput').value;
+            document.getElementById('result4').innerHTML = str.toUpperCase();
+        ">Convert</button>
+        <p><b>Result:</b> <span id="result4"></span></p>
+    </div>
+
+</body>
+</html>
